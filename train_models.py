@@ -14,7 +14,7 @@ cli.add_argument("--l1_ratio", type=float, default=0.5)
 args = cli.parse_args()
 
 # ---------- 2. MLflow ----------
-tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "http://mlflow:5000")
+tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "http://20.151.177.130:5000")
 mlflow.set_tracking_uri(tracking_uri)
 mlflow.set_experiment(f"mlops_redwine_{args.model}")
 
